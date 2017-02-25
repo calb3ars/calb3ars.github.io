@@ -3,38 +3,80 @@ html {
 }
 
 header > img {
-  max-height: 100px;
   max-width: 100px;
+  float: left;
 }
 
-header > nav > ul > li > a {
+nav {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
   text-decoration: none;
+  padding: 20px;
+  display: block;
 }
 
 body {
   font-family: "Arial", "sans-serif";
+  background-color: #FEFFF1;
+  margin: 0 auto;
+  width: 60%;
+}
+
+section {
+  width: 700px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside {
+  display: inline-block;
 }
 
 h1 {
   font-size: 38px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 32px;
 }
 
+ul li a, figcaption a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .ingredients-list {
   list-style: square inside url(../assets/whisk.png);
 }
 
-ol > li {
+.ingredients-list li {
+  margin: 15px 0px;
+}
+
+ol {
   list-style: square inside;
   list-style-type: mongolian;
 }
 
-.user_review h4 {
-  font-size: 18px;
-  font-weight: bold;
+label {
+  display: block;
+}
+
+input[type="text"], select {
+  display: block;
+  width: 175px;
+}
+
+select {
+  margin: 10px 0;
+  width: 180px;
 }
 
 input[type="radio"] {
@@ -43,10 +85,16 @@ input[type="radio"] {
     height: 27px;
     background-image: url(../assets/stars.png);
     vertical-align: bottom;
+    cursor: pointer;
+    outline: none;
 }
 
 input[type="radio"]:checked {
   background-position: 30px 30px;
+}
+
+textarea {
+  width: 350px;
 }
 
 input:last-child {
@@ -59,6 +107,11 @@ input:last-child:hover {
 
 ol li:nth-of-type(2n) {
   background-color: whitesmoke;
+}
+
+.user_review h4 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 h2 + .user_review {
