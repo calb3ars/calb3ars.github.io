@@ -23,13 +23,13 @@ nav ul li a {
 
 body {
   font-family: "Arial", "sans-serif";
-  background-color: #FEFFF1;
+  background-color: #fefdfb;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
 }
 
 section {
-  width: 700px;
+  width: 100%;
   display: inline-block;
   vertical-align: top;
 }
@@ -45,6 +45,11 @@ h1 {
 
 h2 {
   font-size: 32px;
+}
+
+img.hero {
+  max-width: 400px;
+  max-width: 80%
 }
 
 ul li a, figcaption a {
